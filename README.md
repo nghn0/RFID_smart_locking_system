@@ -62,7 +62,7 @@ smart-lock-rfid/
 
 ```
 
-
+---
 
 > ⚠️ **Caution**
 >
@@ -78,7 +78,7 @@ smart-lock-rfid/
 > ✅ Use your mobile hotspot or router SSID and password that your NodeMCU can access.
 
 
-
+---
 
 ### 🌐 Configuring the Server URL
 
