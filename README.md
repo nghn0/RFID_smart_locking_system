@@ -108,3 +108,38 @@ If everything is set up correctly, you should see a confirmation message like:
 Data Saved Successfully
 ```
 
+---
+
+### 📌 MySQL Table Structure (for reference)
+
+Run the following SQL query in **phpMyAdmin** to create the required table in your database:
+
+```sql
+CREATE TABLE rfid_logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    carduid VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+This table will store:
+
+- **`id`**: Unique identifier for each entry (auto-incremented primary key)
+- **`carduid`**: The UID of the scanned RFID card
+- **`name`**: The associated user name
+- **`timestamp`**: The exact date and time when the card was scanned (defaults to current time)
+
+
+---
+
+### 📋 Access Log
+
+After uploading the `show_rfid_data.php` file to your hosting provider, you can view the recorded RFID access logs in a clean table format.
+
+**Access it via:**
+
+```cpp
+https://yourwebsitehostingdomain/show_rfid_data.php
+```
+
