@@ -57,6 +57,8 @@ smart-lock-rfid/
 ├── rfid_test.ino       → Reads and prints RFID UIDs
 └── add_rfid_data.php   → Backend script to log data online (to be hosted)
 
+```
+
 
 
 > ⚠️ **Caution**
