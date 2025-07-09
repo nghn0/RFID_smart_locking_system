@@ -58,6 +58,7 @@ smart-lock-rfid/
 └── add_rfid_data.php   → Backend script to log data online (to be hosted)
 
 
+
 > ⚠️ **Caution**
 >
 > Make sure to replace the following lines in your code with **your actual WiFi credentials**:
@@ -72,9 +73,5 @@ smart-lock-rfid/
 > ✅ Use your mobile hotspot or router SSID and password that your NodeMCU can access.
 
 
-### 🌐 Configuring the Server URL
 
-In your code, update the following line with your **actual web hosting domain**:
 
-```cpp
-String URL = "https://yourwebsitehostingdomain/add_rfid_data.php";
