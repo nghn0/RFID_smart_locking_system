@@ -94,7 +94,7 @@ Make sure the hosting service supports **PHP**.
 You need to upload the following PHP files to your hosting account, specifically inside the `public_html` or root directory:
 
 - **`add_rfid_data.php`**: This script handles saving the scanned RFID card UID and the associated user name.
-- **`show_rfid_data.php`** *(optional)*: This script displays the saved RFID data in a tabular format for easy viewing.
+- **`show_rfid_data.php`**: This script displays the saved RFID data in a tabular format for easy viewing.
 
 After uploading the files, verify the setup by opening a browser and visiting the following test URL:
 
