@@ -56,3 +56,25 @@ smart-lock-rfid/
 ├── wifi_test.ino       → Checks WiFi connectivity
 ├── rfid_test.ino       → Reads and prints RFID UIDs
 └── add_rfid_data.php   → Backend script to log data online (to be hosted)
+
+
+> ⚠️ **Caution**
+>
+> Make sure to replace the following lines in your code with **your actual WiFi credentials**:
+>
+> ```cpp
+> #define ssid "wifi_name"
+> #define password "wifi_password"
+> ```
+>
+> If you do not update these, your NodeMCU will **fail to connect to WiFi**, and the system will not work.
+>
+> ✅ Use your mobile hotspot or router SSID and password that your NodeMCU can access.
+
+
+### 🌐 Configuring the Server URL
+
+In your code, update the following line with your **actual web hosting domain**:
+
+```cpp
+String URL = "https://yourwebsitehostingdomain/add_rfid_data.php";
