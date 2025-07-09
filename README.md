@@ -142,4 +142,9 @@ After uploading the `show_rfid_data.php` file to your hosting provider, you can 
 ```cpp
 https://yourwebsitehostingdomain/show_rfid_data.php
 ```
+---
+
+![WhatsApp Image 2025-07-09 at 10 34 29 AM](https://github.com/user-attachments/assets/50c4ad52-1416-4aac-ac58-9b0263e654d5)
+
+
 
