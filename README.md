@@ -80,3 +80,31 @@ smart-lock-rfid/
 
 
 
+### 🌐 Configuring the Server URL
+
+In your code, update the following line with your **actual web hosting domain**:
+
+```cpp
+String URL = "https://yourwebsitehostingdomain/add_rfid_data.php";
+```
+
+Use a valid and publicly accessible hosting provider such as **000webhost**, **InfinityFree**, or **Hostinger**.  
+Make sure the hosting service supports **PHP**.
+
+You need to upload the following PHP files to your hosting account, specifically inside the `public_html` or root directory:
+
+- **`add_rfid_data.php`**: This script handles saving the scanned RFID card UID and the associated user name.
+- **`show_rfid_data.php`** *(optional)*: This script displays the saved RFID data in a tabular format for easy viewing.
+
+After uploading the files, verify the setup by opening a browser and visiting the following test URL:
+
+```cpp
+https://yourwebsitehostingdomain/add_rfid_data.php?carduid=123456&name=Test
+```
+
+If everything is set up correctly, you should see a confirmation message like:
+
+```cpp
+Data Saved Successfully
+```
+
