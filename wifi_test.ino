@@ -1,6 +1,6 @@
 #include <ESP8266WiFi.h>
-#define ssid "RVU"
-#define password "RVU@guru"
+#define ssid "wifi_name"
+#define password "wifi_password"
 
 void setup()
 {
