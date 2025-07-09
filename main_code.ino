@@ -5,8 +5,8 @@
 #include <ESP8266WiFi.h>
 
 
-#define ssid "Nith"
-#define password "nithi9905"
+#define ssid "wifi_name"
+#define password "wifi_password"
 
 
 constexpr uint8_t RST_PIN = D4;     // Configurable, see typical pin layout above
@@ -18,7 +18,7 @@ WiFiClient wcl;
 
 String tag;
 
-String URL = "https://smartlockrfid.000webhostapp.com/add_rfid_data.php";
+String URL = "https://yourwebsitehostingdomain/add_rfid_data.php";
 String Link;
 
 int lock=D0;
@@ -58,7 +58,7 @@ void loop() {
       digitalWrite(lock, LOW);
       delay(3000);
       digitalWrite(lock, HIGH);
-      http_connection(tag, "nithish");
+      http_connection(tag, "name"); // name in regards to the tagID
     }
     else{
         Serial.print(tag);
